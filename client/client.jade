@@ -1,0 +1,64 @@
+head
+    title dao
+    script(data-ad-client='ca-pub-5593374176518194' async='' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+    
+    meta(name='viewport', content='user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    meta(name="msapplication-TileColor" content="#da532c")
+    meta(name="theme-color" content="#000")
+    link(rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.1/dist/semantic.min.css')
+    link(href="https://fonts.googleapis.com/css?family=Ubuntu:300,400&display=swap" rel="stylesheet")
+    script(src='https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.1/dist/semantic.min.js')
+    //- /* script(async='' src='//embed.redditmedia.com/widgets/platform.js' charset='UTF-8') */
+
+
+body 
+    +home
+
+
+
+template(name='home')
+    .ui.stackable.padded.grid(class=invert_class)
+        .centered.row 
+            .sixteen.wide.center.aligned.column
+                each selected_tags
+                    .ui.black.big.compact.circular.button.unselect_tag
+                        //- i.remove.icon
+                        | #{this}
+                //- if subs_ready
+                //-     i.yin.yang.grey.big.grey.icon(title='dao')
+                unless subs_ready 
+                    i.yin.yang.loading.big.grey.icon(title='dao')
+                .ui.left.icon.large.search.input
+                    i.search.icon
+                    //- if subs_ready
+                    //- else
+                    //-     i.yin.yang.loading.large.icon
+                    input#search.prompt(type='text' autofocus='' autocomplete="off")
+                //- .spacer
+                //- if selected_tags
+                //-     .ui.black.icon.large.compact.circular.button.clear_selected_tags(title='clear search')
+                //-         i.remove.icon
+                //- div
+                each tags
+                    button.ui.basic.circular.compact.big.button.result(tabindex="0" class=result_class title=count) #{title} 
+                        //- small #{count}
+                //- .ui.divider
+                each posts
+                    +post
+
+
+template(name='post')
+    .ui.hidden.divider
+    if title 
+        a.ui.grey.header(href=url target='_window') #{title}
+    else if watson.metadata.title 
+        a.ui.grey.header(href=url target='_window') #{watson.metadata.title}
+    //- div
+    //- .ui.small.basic.white.label #{domain}
+    //- if body
+    //-     .ui.basic.segment
+    //-         |!{body}
+    

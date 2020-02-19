@@ -1,0 +1,53 @@
+{
+    "TZ": "America/Denver",
+    "public": {
+      "stripe_test_publishable": "pk_test_UM1EaHvlITKHumbXFvnlQuVu00pCUf4rPJ",
+      "stripe_live_publishable": "pk_live_cm4NqXlOHWwhbVchdmbV4xQh00FhbiXfnM",
+      "stripe_client_id": "ca_6xrceWlIdjoZ0ebtxSUDBMG1yazAn5et"
+    },
+	"private": {
+		"stripe_test_secret": "sk_test_6QfNJiwUC94nsS3DCax248Ir00fv9fPijc",
+		"stripe_live_secret": "sk_live_zI09tiGK1RoMXX1KVJ7Mmhow00KLXdfHOU",
+		"cloudinary_key": "754714459692734",
+		"cloudinary_secret": "rPPXD3rZM_GCjODvh0T70XeDCSw",
+		"tone": {
+            "apikey": "QEDjdS8Btn2Qq1IFKWu1wirCfdCziCEJhaWt_Tn5MY87",
+            "iam_apikey_description": "Auto-generated for key e64fad1b-3834-4775-baab-3e1dbaa6d62f",
+            "iam_apikey_name": "Auto-generated service credentials",
+            "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+            "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/34a2c275aeff460081c2074ab5abe5c6::serviceid:ServiceId-fb595bbc-0851-4600-b24a-ad5907094a81",
+            "url": "https://gateway.watsonplatform.net/tone-analyzer/api"
+		},
+		"language": {
+			"apikey": "mkdgRJwYEJnuJUhCv0Ny7REL4scA27el5mdPKrnGMEMg",
+            "iam_apikey_description": "Auto-generated for key d3cc8d83-b3f9-40c6-8df6-c9b3d41cb511",
+            "iam_apikey_name": "Auto-generated service credentials",
+            "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+            "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/5e77759c402ab64aaba3f4b42e74814c::serviceid:ServiceId-09ac47da-4023-491e-922b-e73b00525187",
+            "url": "https://gateway.watsonplatform.net/natural-language-understanding/api"
+		},
+		"visual": {
+			"apikey": "dKgeK3U6JYQn235P2f4y1JchqFROfW9ZwlhGe_5ffRA-",
+			"iam_apikey_description": "Auto generated apikey during resource-key operation for Instance - crn:v1:bluemix:public:watson-vision-combined:us-south:a/f18c8f41459468045d98bcffc36f39d4:a215dc07-48ca-41f5-be89-6e311afcb7e6::",
+			"iam_apikey_name": "auto-generated-apikey-63bf28e3-6093-4072-98e5-f9a64e795d39",
+			"iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+			"iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/f18c8f41459468045d98bcffc36f39d4::serviceid:ServiceId-e5742746-dd68-40fa-8962-f66d0f136a65",
+			"url": "https://gateway.watsonplatform.net/visual-recognition/api"
+		},
+		"personality": {
+			"apikey": "k3qTBQiTfIuJMWarQjXYG6Hc1GkK1XVmZcaPTtzShmU1",
+			"iam_apikey_description": "Auto generated apikey during resource-key operation for Instance - crn:v1:bluemix:public:personality-insights:us-south:a/f18c8f41459468045d98bcffc36f39d4:bd3a22ef-c2c0-4f88-990d-58363b487314::",
+			"iam_apikey_name": "auto-generated-apikey-ddeec0a3-81a7-4872-94a4-8bdd0e4977f3",
+			"iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+			"iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/f18c8f41459468045d98bcffc36f39d4::serviceid:ServiceId-737a486e-da22-404d-a3f2-4296dc02065d",
+			"url": "https://gateway.watsonplatform.net/personality-insights/api"
+		}
+	},
+	"galaxy.meteor.com": {
+		"env": {
+            "MONGO_URL": "mongodb://daoadmin:daoadminpassword@aws-us-east-1-portal.21.dblayer.com:10444/daodb?ssl=true",
+            "MAIL_URL": "smtp://postmaster%40mg.goldrun.online:6f213f0ad9eae2a2f91f5f29a8e665bd-fd0269a6-78c00f51@smtp.mailgun.org:587",
+			"ROOT_URL": "https://www.dao.af"
+		}
+	}
+}
