@@ -24,10 +24,6 @@ body {
     cursor: pointer;
 }
 
-.ui.image, img:not(.avatar), .label, .ui.embed, .ui.text, .green.header, .red.header, .blue.header, .orange.header, .inverted{
-    /* border-radius: 7px !important; */
-    filter: invert(1) !important;
-}
 
 /* .inverted{
     background: rgba(0,0,0,.85) !important; */

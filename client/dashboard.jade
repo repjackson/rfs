@@ -1,0 +1,36 @@
+template(name='dashboard')
+    .uic.stackable.padded.grid
+        .row 
+            .ui.header financial management dashboard
+        .row 
+            .four.wide.column
+                .ui.fluid.accordion
+                    .title
+                        .ui.header your portfolio
+                    .content
+                        .ui.list
+                            .item active projecs
+                            .item new projects
+                            .item ended projects
+                            .item ended projects > 120 days
+                    
+                .ui.fluid.accordion
+                    .title
+                        .ui.header milestones
+                    .content
+                        .ui.list 
+                            .item due this week
+                            .item due next 4 weeks
+                            .item past due
+            .eight.wide.column
+                    
+            .four.wide.column
+                .ui.fluid.accordion
+                    .title
+                        .ui.header action items sent to campus partners
+                    .content
+                        .ui.list 
+                            .item pending
+                            .item past due
+                
+                .ui.header action items sent to campus partners

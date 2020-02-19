@@ -139,7 +139,7 @@ Meteor.methods
                 )
             else
                 console.log 'NO found data'
-
+                console.log response
         # _.each(response.data.data.children, (item)->
         #     # data = item.data
         #     # len = 200

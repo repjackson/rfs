@@ -44,6 +44,11 @@ Template.body.events
             $('#search').val('')
             $('#search').blur()
 
+Template.home.onRendered ->
+    Meteor.setTimeout ->
+        $('.accordion').accordion()
+    , 500
+
 Template.home.events
     'click .result': ->
         # console.log @
