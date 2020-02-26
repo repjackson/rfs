@@ -27,6 +27,15 @@ Template.registerHelper 'loading_class', ()->
 Template.registerHelper 'in_dev', ()-> Meteor.isDevelopment
 
 
+
+Template.nav.events
+    'click .alerts': ->
+        alert 'hi'
+
+Template.nav.helpers
+
+
+
 Template.home.onCreated ->
     @autorun => @subscribe 'results', selected_tags.array(), Session.get('current_query')
     @autorun => @subscribe 'docs',
